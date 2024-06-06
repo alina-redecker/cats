@@ -1,0 +1,113 @@
+body {
+  background-size: 100%; 
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to top, rgb(240, 239, 239), rgb(233, 221, 233) 50%);
+  height: 100vh;
+}
+
+
+#splashscreen {
+z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, rgb(240, 239, 239), rgb(233, 221, 233) 50%);;
+}
+
+
+nav {
+  border: solid 2px;
+  border-color: rgba(223, 201, 173, 0.979);
+  }
+  
+
+.logo {
+background: url("Logo.png");
+width: 400px;
+height: 250px;
+margin: auto;
+align-items: center;
+}
+
+.Collage img {
+  width: 100%;
+}
+
+.Einführung {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-width: 3px;
+  border-color: rgba(223, 201, 173, 0.979);
+  border-style: solid;
+}
+
+.Textfeld {
+  padding: 50px;
+  text-align: center;
+  border-width: 3px;
+  border-style:solid;
+  border-color: rgba(223, 201, 173, 0.979);
+  font-weight: 500;
+}
+
+.UhrzeitDatum {
+  padding: 70px;
+  text-align: center;
+  align-items: center;
+  border-width: 3px;
+  border-style:solid;
+  border-color: rgba(223, 201, 173, 0.979);
+  font-weight: 700;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  padding-top: 10px;
+  text-align: center;
+  align-items: center;
+  background-color:rgb(240, 239, 239);
+  width: 100%;
+  }
+
+
+@media print {
+body {
+  font-size: 12pt;
+  color: black;
+  background-color: white;
+}
+
+.footer, .nav, .Collage, .UhrzeitDatum {
+  display: none;
+}
+
+.grid-item {
+  page-break-inside: avoid;
+}
+
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3,1fr);
+  }
+
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+
+
+
+
+

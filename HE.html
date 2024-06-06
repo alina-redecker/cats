@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mein Blog</title>
+  <!-- Fügen Sie hier den Bootstrap-CDN-Link ein oder verwenden Sie Ihre lokale Bootstrap-Datei -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="HE.css">
+
+</head>
+<body>
+
+  <h1 class= "logo"></h1>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="nav-link disabled" aria-disabled="true"><h4>Haltung & Erstaustattung</h4></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        </li> <a class="nav-link" href="Homepage.html">Home</a> <li>
+          <li> <a class="nav-link" href="Sushi.html">Sushi</a></li>
+        </div>
+      </div>
+    </div>
+  </nav><br>
+
+  
+  <div class="MeinShop">
+
+    <div class="Start">
+      <p>Du kannst dich hier gerne zu allen möglichen Themen belesen. <br>
+        Wenn dir etwas besonders gut gefällt, pack es gerne in den Warenkorb. <br>
+        Hast du Fragen? Dann stell sie mir gerne über die Fragebox an der Seite.</p>
+  
+    </div>
+  
+    <div class="Fragebox">
+   <input type="text" id="inputBox" class="input-box" placeholder="Stell mir eine Frage!">
+   <button class="button" onClick="submitText()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+  </svg>
+</button>
+    </div>
+  
+  </div>
+
+  <script>
+  function submitText() {
+ const text= document.getElementById("inputBox").value;
+ if(text) {
+  alert("Danke für deine Frage! Ich werde versuchen dir weiterzuhelfen.")
+ } else {
+  alert("Bitte gib dein Anliegen ein.");
+ }
+
+  }
+
+  </script>
+
+
+  <div class="Zähler">Warenkorb<br><span id ="ZählerValue">0</span></div>
+  
+<div class="Shop">
+<div class="item">
+  <img src="KratzbaumGroß.jfif">
+  <p>Großer Kratzbaum, großer Spaß.<br> 
+    Die Tiger lieben es hoch hinaus zu kommen.<br> 
+    Super für die, die den Platz dafür übrig haben.</p><button class="Plus" onClick="Zähler()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+  </svg></button>
+</div>
+
+
+<div class="item">
+<img src="KratzbaumKlein.jfif">
+<p>Falls man etwas kleineres sucht, findet sich natürlich auch was.<br>
+   Etwas zum Kratzen, sowie zum Verstecken und schlafen ist dabei.<br> 
+   Alles, was Katzen brauchen.</p><button class="Plus" onClick="Zähler()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+</svg></button>
+</div>
+
+<div class="item">
+<img src="Kratzturm.jfif">
+<p>Genug Kratzmöglichkeiten sind extrem wichtig,<br>
+   um ausgewogene und glückliche Katzen großzuziehen. <br>
+   Auch, wenn man bereits einen Kratzbaum hat.</p><button class="Plus" onClick="Zähler()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+</svg></button>
+</div>
+
+<div class="item">
+  <img src="Kratzmatte.jfif">
+  <p>Kratzmatten sind toll für kleinere Wohnungen.<br>
+     Diese kann man platzieren, wo immer man möchte <br>
+      und bietet seinem Haustier etwas Abwechslung.</p><button class="Plus" onClick="Zähler()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+  </svg></button>
+  </div>
+
+  <div class="item">
+    <img src="Napf.jfif">
+    <p>Natürlich müssen Näpfe her. Dabei ist jedoch <br>
+       etwas Aufmerksamkeit beim Kauf wichtig!<br>
+        Katzen können es nicht leiden, wenn <br>
+        ihre Schnurrhaare beim Essen permanent <br>
+        gegen etwas stoßen.Sie können dadurch <br>
+        unter Stress leiden.Also: flache Näpfe  kaufen, <br>
+        damit die Schnurrhaare ihre Freiheit haben.</p><button class="Plus" onClick="Zähler()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+    </svg></button>
+    </div>
+
+    <div class="item">
+      <img src="NapfHoch.jfif">
+      <p>Noch besser sind flache Näpfe, die etwas höher stehen. <br>
+        Das ist besser für die Gelenke und verhilft eurem Haustier<br>
+        zu noch mehr Komfort beim Essen. Achtet jedoch darauf,<br>
+        dass ein Napf mit Wasser nicht neben dem Futter stehen sollte. <br>
+        Katzen trinken eh schon total wenig, aber mögen es gar nicht <br>
+        gerne, neben ihrem Futter zu trinken.</p><button class="Plus" onClick="Zähler()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+      </svg></button>
+      </div>
+
+        <div class="item">
+          <img src="Carny.jfif">
+          <p>Ich möchte hier ausschließlich Nassfutter bewerben.<br>
+             Wie gesagt, trinken Katzen nur wenig und nehmen das<br>
+            meiste an Flüssigkeit durch Nassfutter auf.<br>
+            Abgesehen davon enthält Trockenfutter häufig unnötige <br>
+             Zusatzstoffe, die für gesunde Haustiere unvorteilhaft sind.<br>
+              Carny füttere ich übrigens seit Jahren selbst.</p><button class="Plus" onClick="Zähler()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+          </svg></button>
+          </div>
+
+          <div class="item">
+            <img src="mjammjam.jfif">
+            <p>Eine  Alternative ist das Nassfutter von Mjammjam.<br>
+               Auch hier ist der Fleischanteil sehr hoch und es <br>
+               sind keine unvorteilhaften Inhaltsstoffe drin. <br>
+               Achtet darauf, dass der Fleischanteil mindestens über 70% ist.</p><button class="Plus" onClick="Zähler()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg></button>
+            </div>
+
+            <div class="item">
+            <img src="Katzenklo.jfif">
+            <p>Meine persönliche Empfehlung sind Katzenklos aus Metall.<br>
+               Eurer Katze ist das Material egal, für euch kann Metall <br>
+               aber einen großen Vorteil im Vergleich zu den Plastikklos bieten.<br>
+               Durch das Verscharren ihres Geschäfts machen Katzen irgendwann<br>
+               kleine Kratzer ins Plastik. Wenn sich dort der Urin absetzt, kriegt <br>
+               man die Toiletten leider nicht mehr zu 100% sauber und geruchsfrei, <br>
+               was sich irgendwann bemerkbar machen kann.</p><button class="Plus" onClick="Zähler()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg></button>
+            </div>
+
+        <div class="item">
+          <img src="Transportbox.jfif">
+          <p>Zum Tierarzt, beim Umzug, auf Reisen. <br>
+            Irgendwie müsst ihr ab und zu euer Haustier mitnehmen<br>
+             und dazu eignet sich natürlich eine Transportbox. <br>
+             Hier kommt es darauf an, was euer Tier so gut findet.<br>
+             Ich habe die besten Erfahrungen mit den klassischen <br>
+             Hartplastikboxen gemacht, da die Katzen dort am meisten<br>
+             Stabilität haben und auch bei Aussetzern aus Angst, wie Pinkeln,<br>
+             Kratzen usw. einen guten Job machen.</p><button class="Plus" onClick="Zähler()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+          </svg></button>
+        </div>
+
+            <div class="item">
+              <img src="SpielzeugKatzenminze.jfif">
+              <p>Spielzeeeeuuuuuug. Daran haben sowohl Katzen, als auch <br>
+                wir am meisten Spaß gemeinsam. Spielsachen, <br>
+                die Katzenminze enthalten, sind sogar noch lustiger.<br>
+                 Katzen werden dabei völlig verrückt und rollen sich hin<br>
+                  und her, rennen durch die Gegend, sind verspielt und hebt <br>
+                allgemein extrem ihre Stimmung. Es sollte jedoch<br>
+                 nicht ständig erreichbar für die Katzen sein, da es sonst <br>
+                 mit der zeit keine Wirkung mehr auf sie hat.</p><button class="Plus" onClick="Zähler()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg></button>
+              </div>
+
+                
+              
+              <div class="item">
+                <img src="LernSpielzeug.jfif">
+                <p>Um Katzen kognitiv zu fördern, eignen sich solche Lernspielzeuge.<br>
+                   Diese bieten die Möglichkeit Leckerlies zu verstecken, die durch <br>
+                   Verschieben oder Öffnen usw. von eurem Stubentiger gefunden werden müssen. </p><button class="Plus" onClick="Zähler()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></button>
+                </div>
+
+              </div>
+
+
+<script>
+var numbers = [0];
+
+function Zähler() {
+numbers[0] += 1; 
+document.getElementById('ZählerValue').textContent = numbers[0]; 
+}
+</script>
+
+<footer>
+  <div class="container-footer">
+   <a> &copy; 2024- Blog von Alina</a> <br>
+   <a>Besuch mich auf Instagram - </a><a href = "https://www.instagram.com/alina.mlie/" target="-blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+    </svg></a>
+  </div>
+    
+</footer>
+
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
